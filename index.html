@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bruno Konzen • Biografia</title>
   <meta name="description" content="Bruno Konzen — Bacharel em Ciência da Computação. Infraestrutura, Dados/BI e Automação." />
+
+  <!-- FAVICON (ícone da aba) -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -12,6 +18,7 @@
   <header class="top">
     <div class="container nav">
       <a class="brand" href="#inicio">
+        <span class="brand-dot"></span>
         <span class="brand-text">Bruno Konzen</span>
       </a>
 
@@ -34,53 +41,98 @@
   </header>
 
   <main id="inicio" class="container">
-    <!-- HERO / BIO -->
+    <!-- BIO / PERFIL -->
     <section class="hero" id="bio">
-      <div class="hero-card">
-        <div class="hero-head">
-          <!-- FOTO EM UM ÚNICO LUGAR -->
+      <div class="profile-card">
+        <div class="profile-left">
+          <!-- FOTO (um lugar só) -->
           <img class="avatar" src="profile.jpeg" alt="Foto do Bruno" />
 
-          <div class="hero-title">
-            <h1>Bruno Konzen</h1>
-            <p class="headline">
-              Bacharel em Ciência da Computação • Infraestrutura • Dados/BI • Automação
-            </p>
+          <div class="profile-actions">
+            <a class="pill" href="mailto:brunogkonzen@hotmail.com" title="Email">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+              </span>
+              Email
+            </a>
 
-            <div class="meta">
-              <span class="meta-item">
+            <a class="pill" href="https://wa.me/5549984004883" target="_blank" rel="noreferrer" title="WhatsApp">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+              </span>
+              WhatsApp
+            </a>
+
+            <a class="pill" href="https://www.linkedin.com/in/bruno-konzen-8b899939a/" target="_blank" rel="noreferrer" title="LinkedIn">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l2.8-2.8a1 1 0 1 1 1.4 1.4l-2.8 2.8a1 1 0 0 1-1.4 0z"/><path d="M7.8 16.2a4 4 0 0 1 0-5.7l2-2a4 4 0 0 1 5.7 0 1 1 0 1 1-1.4 1.4 2 2 0 0 0-2.8 0l-2 2a2 2 0 0 0 2.8 2.8 1 1 0 1 1 1.4 1.4 4 4 0 0 1-5.7 0z"/></svg>
+              </span>
+              LinkedIn
+            </a>
+
+            <a class="pill" href="https://github.com/brunogkonzen" target="_blank" rel="noreferrer" title="GitHub">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9.4 16.6 5.8 13l3.6-3.6a1 1 0 1 0-1.4-1.4l-4.3 4.3a1 1 0 0 0 0 1.4l4.3 4.3a1 1 0 0 0 1.4-1.4z"/><path d="M14.6 16.6a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4L16 6.6a1 1 0 1 0-1.4 1.4L18.2 12l-3.6 3.6a1 1 0 0 0 0 1.4z"/></svg>
+              </span>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-right">
+          <div class="profile-top">
+            <h1>Bruno Konzen</h1>
+            <p class="headline">Bacharel em Ciência da Computação • Infraestrutura • Dados/BI • Automação</p>
+
+            <div class="badges">
+              <span class="badge">
                 <span class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M12 22s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11zm0-9a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
                 </span>
                 Santa Catarina • Brasil
               </span>
 
-              <span class="meta-item">
+              <span class="badge">
                 <span class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3l-3 3-3-3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/></svg>
                 </span>
-                Aberto a remoto/presencial
+                2 Pós-graduações em andamento
+              </span>
+
+              <span class="badge ok">
+                <span class="dot"></span>
+                Disponível para oportunidades
               </span>
             </div>
           </div>
-        </div>
 
-        <div class="bio">
-          <p>
-            Sou bacharel em Ciência da Computação e estou cursando duas pós-graduações na área de TI.
-            Atuo no dia a dia com tecnologia aplicada ao mundo real: organizar ambientes, garantir estabilidade
-            e melhorar processos usando dados e automação.
-          </p>
+          <div class="bio">
+            <p>
+              Sou bacharel em Ciência da Computação e estou cursando duas pós-graduações na área de TI.
+              Meu foco é tecnologia aplicada ao mundo real: organizar ambientes, garantir estabilidade
+              e melhorar processos usando dados e automação.
+            </p>
+            <p>
+              Tenho perfil prático e organizado. Gosto de padronizar, documentar e entregar soluções simples
+              de manter. Também enxergo TI como área estratégica: infraestrutura e dados bem estruturados
+              viram produtividade, segurança e clareza para decisão.
+            </p>
+          </div>
 
-          <p>
-            Tenho um perfil prático e organizado: gosto de deixar a TI “redonda”, com padrão, documentação e
-            soluções que sejam simples de manter. Ao mesmo tempo, penso na TI como área estratégica — quando
-            infraestrutura e dados estão bem estruturados, a empresa ganha produtividade, segurança e clareza
-            para tomar decisões.
-          </p>
-        </div>
-
-          </a>
+          <div class="mini-grid">
+            <div class="mini">
+              <div class="mini-k">Pilares</div>
+              <div class="mini-v">Infra • Dados • Automação</div>
+            </div>
+            <div class="mini">
+              <div class="mini-k">Estilo</div>
+              <div class="mini-v">Resolver • Organizar • Evoluir</div>
+            </div>
+            <div class="mini">
+              <div class="mini-k">Atuação</div>
+              <div class="mini-v">TI corporativo</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -93,7 +145,7 @@
         <div class="card">
           <div class="card-title">
             <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2v4h16V5H4z"/><path d="M4 13h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M4 13h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z"/></svg>
             </span>
             <h3>Infraestrutura</h3>
           </div>
@@ -103,7 +155,7 @@
         <div class="card">
           <div class="card-title">
             <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 3.8 3 6v12c0 2.2 4 4 9 4s9-1.8 9-4V6c0-2.2-4-4-9-4zm0 2c4.4 0 7 .9 7 2s-2.6 2-7 2-7-.9-7-2 2.6-2 7-2zm0 16c-4.4 0-7-.9-7-2v-2c1.7 1.1 4.7 1.7 7 1.7s5.3-.6 7-1.7v2c0 1.1-2.6 2-7 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 3.8 3 6v12c0 2.2 4 4 9 4s9-1.8 9-4V6c0-2.2-4-4-9-4z"/></svg>
             </span>
             <h3>Dados & BI</h3>
           </div>
@@ -113,7 +165,7 @@
         <div class="card">
           <div class="card-title">
             <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M11 2h2v2h3a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h3V2zm5 6H8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M11 2h2v2h3a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h3V2z"/></svg>
             </span>
             <h3>Automação</h3>
           </div>
@@ -171,26 +223,6 @@
           <div>
             <div class="ck">WhatsApp</div>
             <div class="cv">(49) 9 8400-4883</div>
-          </div>
-        </a>
-
-        <a class="contact" href="https://www.linkedin.com/in/bruno-konzen-8b899939a/" target="_blank" rel="noreferrer">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l2.8-2.8a1 1 0 1 1 1.4 1.4l-2.8 2.8a1 1 0 0 1-1.4 0z"/><path d="M7.8 16.2a4 4 0 0 1 0-5.7l2-2a4 4 0 0 1 5.7 0 1 1 0 1 1-1.4 1.4 2 2 0 0 0-2.8 0l-2 2a2 2 0 0 0 2.8 2.8 1 1 0 1 1 1.4 1.4 4 4 0 0 1-5.7 0z"/></svg>
-          </span>
-          <div>
-            <div class="ck">LinkedIn</div>
-            <div class="cv">Perfil profissional</div>
-          </div>
-        </a>
-
-        <a class="contact" href="https://github.com/brunogkonzen" target="_blank" rel="noreferrer">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M9.4 16.6 5.8 13l3.6-3.6a1 1 0 1 0-1.4-1.4l-4.3 4.3a1 1 0 0 0 0 1.4l4.3 4.3a1 1 0 0 0 1.4-1.4z"/><path d="M14.6 16.6a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4L16 6.6a1 1 0 1 0-1.4 1.4L18.2 12l-3.6 3.6a1 1 0 0 0 0 1.4z"/></svg>
-          </span>
-          <div>
-            <div class="ck">GitHub</div>
-            <div class="cv">Repositórios</div>
           </div>
         </a>
       </div>
