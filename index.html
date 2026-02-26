@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bruno Konzen • TI & Automação</title>
-  <meta name="description" content="Portfólio e apresentação profissional de Bruno Konzen — TI, automação, dados e infraestrutura." />
+  <title>Bruno Konzen • Infra • Dados • Automação</title>
+  <meta name="description" content="Portfólio e apresentação profissional: infraestrutura, dados/BI e automação de processos." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Fundo decorativo -->
   <div class="bg">
     <div class="grid"></div>
     <div class="glow g1"></div>
@@ -26,19 +25,21 @@
       <nav class="menu" aria-label="Menu">
         <a href="#sobre">Sobre</a>
         <a href="#stack">Stack</a>
+        <a href="#experiencia">Experiência</a>
         <a href="#projetos">Projetos</a>
+        <a href="#formacao">Formação</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <button class="menu-btn" type="button" aria-label="Abrir menu" onclick="toggleMenu()">
-        ☰
-      </button>
+      <button class="menu-btn" type="button" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
     </div>
 
     <div id="mobileMenu" class="mobile-menu container">
       <a href="#sobre" onclick="toggleMenu()">Sobre</a>
       <a href="#stack" onclick="toggleMenu()">Stack</a>
+      <a href="#experiencia" onclick="toggleMenu()">Experiência</a>
       <a href="#projetos" onclick="toggleMenu()">Projetos</a>
+      <a href="#formacao" onclick="toggleMenu()">Formação</a>
       <a href="#contato" onclick="toggleMenu()">Contato</a>
     </div>
   </header>
@@ -47,38 +48,39 @@
     <section class="hero">
       <div class="hero-left">
         <div class="chips">
-          <span class="chip">TI</span>
-          <span class="chip">Automação</span>
-          <span class="chip">Dados</span>
           <span class="chip">Infra</span>
+          <span class="chip">Dados / BI</span>
+          <span class="chip">Automação</span>
+          <span class="chip">TI Corporativo</span>
         </div>
 
         <h1>
-          Construo soluções <span class="neon">rápidas</span> e <span class="neon2">confiáveis</span>
-          para o dia a dia da empresa.
+          TI na prática: <span class="neon">infra estável</span>,
+          <span class="neon2">dados confiáveis</span> e
+          <span class="neon">processos automáticos</span>.
         </h1>
 
         <p class="subtitle">
-          Integro sistemas, organizo dados e deixo processos automáticos (sem gambiarra).
-          Foco em produtividade, rastreabilidade e suporte para decisões.
+          Eu tiro tarefas repetitivas do caminho, organizo a casa (acessos, rede, servidor)
+          e entrego visibilidade com BI/relatórios — sempre com documentação e padrão.
         </p>
 
         <div class="cta">
           <a class="btn primary" href="#projetos">Ver projetos</a>
           <a class="btn" href="#contato">Falar comigo</a>
-          <a class="btn ghost" href="#sobre">Conhecer mais</a>
+          <a class="btn ghost" href="CV_Bruno_Konzen.pdf" download>Baixar CV</a>
         </div>
 
         <div class="terminal">
           <div class="terminal-bar">
             <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
-            <span class="term-title">status • brunokonzen</span>
+            <span class="term-title">status • bruno-konzen</span>
           </div>
-          <pre class="terminal-body"><code><span class="k">bruno</span>@<span class="k">portfolio</span>:~$ <span class="cmd">whoami</span>
-<span class="out">TI • Automação • SQL Server • Power BI • Redes • Make</span>
+          <pre class="terminal-body"><code><span class="k">bruno</span>@<span class="k">ops</span>:~$ <span class="cmd">areas</span>
+<span class="out">infra (windows server / rds / rede) • dados (sql / bi) • automação (make / bots)</span>
 
-<span class="k">bruno</span>@<span class="k">portfolio</span>:~$ <span class="cmd">focus</span>
-<span class="out">reduzir retrabalho • padronizar processos • entregar valor rápido</span></code></pre>
+<span class="k">bruno</span>@<span class="k">ops</span>:~$ <span class="cmd">focus</span>
+<span class="out">padronização • rastreabilidade • reduzir retrabalho • suporte a decisões</span></code></pre>
         </div>
       </div>
 
@@ -86,49 +88,53 @@
         <div class="profile-card">
           <div class="profile-top">
             <div class="avatar-wrap">
-              <!-- Troque para sua foto: img/foto.jpg -->
-              <img class="avatar" src="img/foto.jpg" alt="Foto do Bruno" onerror="this.style.display='none'; document.getElementById('fallbackAvatar').style.display='grid';" />
+              <img class="avatar" src="profile.jpeg" alt="Foto do Bruno"
+                   onerror="this.style.display='none'; document.getElementById('fallbackAvatar').style.display='grid';" />
               <div id="fallbackAvatar" class="fallback-avatar" style="display:none;">BK</div>
             </div>
 
             <div class="profile-meta">
               <p class="name">Bruno Konzen</p>
-              <p class="role">TI • Automação • Dados</p>
+              <p class="role">Infra • Dados • Automação</p>
               <p class="loc">Brasil • SC</p>
             </div>
           </div>
 
           <div class="profile-stats">
             <div class="stat">
-              <span class="stat-k">Stack</span>
-              <span class="stat-v">SQL • BI • Infra</span>
+              <span class="stat-k">Perfil</span>
+              <span class="stat-v">TI corporativo (mão na massa)</span>
             </div>
             <div class="stat">
-              <span class="stat-k">Especialidade</span>
-              <span class="stat-v">Processos & Integrações</span>
+              <span class="stat-k">Pilares</span>
+              <span class="stat-v">Infra + Dados + Automação</span>
             </div>
             <div class="stat">
-              <span class="stat-k">Modo</span>
-              <span class="stat-v">Hands-on</span>
+              <span class="stat-k">Entrega</span>
+              <span class="stat-v">Processos claros + documentação</span>
             </div>
           </div>
 
           <div class="profile-links">
             <a class="pill" href="mailto:brunogkonzen@hotmail.com">Email</a>
-            <a class="pill" href="https://wa.me/5549998004883" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="pill" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="pill" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pill" href="https://wa.me/5549984004883" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a class="pill" href="https://www.linkedin.com/in/bruno-konzen-8b899939a/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="pill" href="https://github.com/brunogkonzen" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
 
         <div class="mini-cards">
           <div class="mini">
-            <p class="mini-title">⚡ Entregas</p>
-            <p class="mini-text">Automação, relatórios e infraestrutura com documentação.</p>
+            <p class="mini-title">⚡ Infra</p>
+            <p class="mini-text">Organização de acessos, servidor, rede e troubleshooting.</p>
           </div>
           <div class="mini">
-            <p class="mini-title">🛡️ Confiabilidade</p>
-            <p class="mini-text">Padrões, validações e monitoramento onde importa.</p>
+            <p class="mini-title">📊 Dados</p>
+            <p class="mini-text">Views, relatórios e BI com consistência e governança.</p>
+          </div>
+          <div class="mini">
+            <p class="mini-title">🤖 Automação</p>
+            <p class="mini-text">Make + bots + integrações para eliminar tarefas manuais.</p>
           </div>
         </div>
       </div>
@@ -137,23 +143,23 @@
     <section id="sobre" class="section">
       <h2>Sobre</h2>
       <p>
-        Sou profissional de TI com foco em automação de processos, dados e infraestrutura.
-        Gosto de pegar um problema real (retrabalho, falta de controle, planilhas quebradas, integrações manuais)
-        e transformar em algo simples de operar e fácil de manter.
+        Sou profissional de TI com foco em infraestrutura, dados/BI e automação.
+        Curto pegar um problema real e transformar em rotina simples, rastreável e confiável,
+        com foco em produtividade e redução de retrabalho.
       </p>
 
       <div class="grid-3">
         <div class="card">
           <h3>Infra & Redes</h3>
-          <p>Windows Server, RDS, organização de acessos, redes e troubleshooting.</p>
+          <p>Windows Server, RDS, acessos, rede, troubleshooting e padronização.</p>
         </div>
         <div class="card">
           <h3>Dados & BI</h3>
-          <p>SQL Server, views, Power BI/Excel com foco em decisão e planejamento.</p>
+          <p>SQL Server, views, Power BI/Excel — visibilidade para decisão e PCP/vendas.</p>
         </div>
         <div class="card">
           <h3>Automação</h3>
-          <p>Make + Bots + Planilhas/BD para reduzir tarefas repetitivas.</p>
+          <p>Make + bots + integrações para remover tarefas repetitivas e falhas humanas.</p>
         </div>
       </div>
     </section>
@@ -172,6 +178,44 @@
       </div>
     </section>
 
+    <section id="experiencia" class="section">
+      <h2>Experiência Técnica</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>🛡️ Infraestrutura & Suporte</h3>
+          <p>
+            Administração de servidor, acessos, RDS, rede e resolução de incidentes.
+            Padronização, backups e foco em disponibilidade.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📈 Dados & BI (PCP / Vendas)</h3>
+          <p>
+            Modelagem via views no banco, relatórios Power BI/Excel e indicadores
+            para planejamento e tomada de decisão.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>⚙️ Automação de Processos</h3>
+          <p>
+            Integrações no Make, automações com planilhas/banco e bots para reduzir
+            tarefas manuais e erros.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🔐 Governança</h3>
+          <p>
+            Organização de credenciais e acessos por usuário, padronização e documentação
+            para facilitar auditoria e manutenção.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="projetos" class="section">
       <h2>Projetos em destaque</h2>
 
@@ -183,8 +227,7 @@
           </div>
           <p>Registro de batidas com validação de sequência e integração com planilha.</p>
           <div class="links">
-            <a href="#" target="_blank" rel="noreferrer">Detalhes</a>
-            <a href="#" target="_blank" rel="noreferrer">Código</a>
+            <a href="https://github.com/brunogkonzen" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </article>
 
@@ -193,21 +236,20 @@
             <h3>Dashboards (PCP / Vendas)</h3>
             <span class="badge">BI</span>
           </div>
-          <p>Relatórios com views no banco para produção, vendas e planejamento.</p>
+          <p>Relatórios e indicadores com views no banco para produção e planejamento.</p>
           <div class="links">
-            <a href="#" target="_blank" rel="noreferrer">Prints</a>
+            <a href="https://www.linkedin.com/in/bruno-konzen-8b899939a/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </article>
 
         <article class="project">
           <div class="project-top">
-            <h3>Cofre de Credenciais (TI)</h3>
-            <span class="badge">Gestão</span>
+            <h3>Cofre de Credenciais</h3>
+            <span class="badge">Gestão TI</span>
           </div>
-          <p>Centralização de acessos por usuário: e-mail, Windows, FileServer, IPs e periféricos.</p>
+          <p>Centraliza acessos por usuário: e-mail, Windows, FileServer, IPs e periféricos.</p>
           <div class="links">
-            <a href="#" target="_blank" rel="noreferrer">Demo</a>
-            <a href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a href="https://github.com/brunogkonzen" target="_blank" rel="noreferrer">Repo</a>
           </div>
         </article>
 
@@ -216,33 +258,65 @@
             <h3>Compilador (Python → TAC → RISC-V)</h3>
             <span class="badge">Dev</span>
           </div>
-          <p>Lexer, parser, semântica, TAC e geração de Assembly testada no RARS.</p>
+          <p>Lexer, parser, semântica, TAC e geração Assembly testada no RARS.</p>
           <div class="links">
-            <a href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a href="https://github.com/brunogkonzen" target="_blank" rel="noreferrer">Repo</a>
           </div>
         </article>
+      </div>
+
+      <div class="tip">
+        <span>⚙️</span>
+        <p>Quer que eu organize essa seção com cards “Problema → Solução → Resultado”? Fica muito forte pra recrutador.</p>
+      </div>
+    </section>
+
+    <section id="formacao" class="section">
+      <h2>Formação & Certificações</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>🎓 Ciência da Computação</h3>
+          <p>UNOESC — Em andamento</p>
+        </div>
+
+        <div class="card">
+          <h3>📚 Pós-graduação (Lato Sensu)</h3>
+          <p>Área de TI — (adicione o nome exato quando quiser)</p>
+        </div>
+
+        <div class="card">
+          <h3>📄 Currículo</h3>
+          <p><a href="CV_Bruno_Konzen.pdf" download>Baixar CV (PDF)</a></p>
+        </div>
+
+        <div class="card">
+          <h3>📜 Diploma</h3>
+          <p><a href="Diploma_Bruno_Konzen.pdf" target="_blank" rel="noreferrer">Ver Diploma (PDF)</a></p>
+        </div>
       </div>
     </section>
 
     <section id="contato" class="section">
       <h2>Contato</h2>
-      <p>Se quiser trocar uma ideia sobre TI, automação ou dados, me chama:</p>
+      <p>Pra falar comigo, é só chamar:</p>
 
       <div class="contact">
         <a class="btn primary" href="mailto:brunogkonzen@hotmail.com">Email</a>
-        <a class="btn" href="https://wa.me/5549998004883" target="_blank" rel="noreferrer">WhatsApp</a>
-        <a class="btn ghost" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://wa.me/5549984004883" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/bruno-konzen-8b899939a/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/brunogkonzen" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="CV_Bruno_Konzen.pdf" download>Baixar CV</a>
       </div>
 
       <div class="note">
         <span>📌</span>
-        <p>Dica: depois você pode comprar um domínio e apontar pro GitHub Pages.</p>
+        <p>Dica: quando você tiver um domínio, dá pra apontar pro GitHub Pages e ficar “brunokonzen.com.br”.</p>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Bruno Konzen • feito com HTML/CSS • vibes neon</p>
+      <p>© <span id="year"></span> Bruno Konzen • Infra • Dados • Automação</p>
     </footer>
   </main>
 
