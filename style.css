@@ -5,26 +5,26 @@
    ========================================================= */
 
 :root{
-  /* superfícies */
-  --ink:      #0C1417;
-  --ink-2:    #090F12;
-  --panel:    #101B1F;
-  --panel-2:  #152329;
-  --raise:    rgba(255,255,255,.02);
+  /* superfícies (preto profundo do logo) */
+  --ink:      #08090B;
+  --ink-2:    #050608;
+  --panel:    #0D1118;
+  --panel-2:  #111827;
+  --raise:    rgba(255,255,255,.025);
 
   /* linhas */
-  --line:     rgba(150,180,190,.12);
-  --line-2:   rgba(150,180,190,.22);
+  --line:     rgba(140,160,200,.12);
+  --line-2:   rgba(140,160,200,.24);
 
   /* texto */
-  --text:     #EAF0F1;
-  --muted:    #94A7AD;
-  --faint:    #6E828A;
+  --text:     #EAEEF6;
+  --muted:    #97A3BC;
+  --faint:    #66718B;
 
-  /* sinal (âmbar/brass = acento principal) */
-  --signal:   #F2A93B;
-  --signal-2: #F6C170;
-  --signal-soft: rgba(242,169,59,.12);
+  /* sinal (azul royal do logo = acento principal) */
+  --signal:   #3B66FF;
+  --signal-2: #7A9BFF;
+  --signal-soft: rgba(59,102,255,.15);
 
   /* status operacional (verde = "no ar", uso funcional apenas) */
   --live:     #43D9A3;
@@ -44,7 +44,7 @@ html{ scroll-behavior:smooth; }
 /* âncoras não ficam escondidas atrás do menu fixo */
 section[id]{ scroll-margin-top:84px; }
 
-::selection{ background:var(--signal); color:var(--ink); }
+::selection{ background:var(--signal); color:#fff; }
 
 body{
   margin:0;
@@ -54,7 +54,7 @@ body{
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
   background:
-    radial-gradient(1100px 520px at 12% -6%, rgba(242,169,59,.06), transparent 60%),
+    radial-gradient(1100px 520px at 12% -6%, rgba(46,91,255,.08), transparent 60%),
     radial-gradient(900px 480px at 92% 0%, rgba(67,217,163,.05), transparent 55%),
     var(--ink);
 }
@@ -105,13 +105,10 @@ a{ color:inherit; text-decoration:none; }
 .nav{ display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 0; }
 
 .brand{ display:flex; align-items:center; gap:11px; }
-.brand-mark{
-  width:34px; height:34px; border-radius:9px;
-  display:grid; place-items:center;
-  font-family:var(--mono); font-weight:700; font-size:.82rem;
-  color:var(--signal);
-  border:1px solid var(--line-2);
-  background: linear-gradient(180deg, var(--signal-soft), transparent);
+.brand-logo{
+  width:36px; height:36px; border-radius:50%;
+  display:block;
+  box-shadow: 0 0 0 1px var(--line-2), 0 0 16px rgba(46,91,255,.25);
 }
 .brand-text{ font-weight:600; letter-spacing:.2px; }
 .brand-text small{
@@ -354,11 +351,11 @@ h1{
 }
 .btn:hover{ transform: translateY(-2px); }
 .btn-primary{
-  color:var(--ink);
+  color:#fff;
   background: linear-gradient(90deg, var(--signal), var(--signal-2));
-  box-shadow: 0 8px 24px rgba(242,169,59,.22);
+  box-shadow: 0 8px 24px rgba(46,91,255,.30);
 }
-.btn-primary:hover{ box-shadow: 0 12px 30px rgba(242,169,59,.3); }
+.btn-primary:hover{ box-shadow: 0 12px 30px rgba(46,91,255,.40); }
 .btn-ghost{
   color:var(--text);
   border-color:var(--line-2);
@@ -426,7 +423,7 @@ h1{
   font-size:.8rem; color:var(--muted);
 }
 .flow-node.out{
-  color:var(--ink); font-weight:700;
+  color:#fff; font-weight:700;
   background: linear-gradient(90deg, var(--signal), var(--signal-2));
   border-color: transparent;
 }
