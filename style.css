@@ -41,6 +41,11 @@
 
 html{ scroll-behavior:smooth; }
 
+/* âncoras não ficam escondidas atrás do menu fixo */
+section[id]{ scroll-margin-top:84px; }
+
+::selection{ background:var(--signal); color:var(--ink); }
+
 body{
   margin:0;
   color:var(--text);
@@ -337,6 +342,29 @@ h1{
   background: var(--raise);
   padding:4px 9px; border-radius:7px;
 }
+
+/* CTAs do hero */
+.cta-row{ margin-top:22px; display:flex; gap:12px; flex-wrap:wrap; }
+.btn{
+  display:inline-flex; align-items:center; gap:9px;
+  padding:12px 20px; border-radius:12px;
+  font-weight:600; font-size:.95rem;
+  border:1px solid transparent;
+  transition: transform .18s, box-shadow .18s, border-color .18s, background .18s;
+}
+.btn:hover{ transform: translateY(-2px); }
+.btn-primary{
+  color:var(--ink);
+  background: linear-gradient(90deg, var(--signal), var(--signal-2));
+  box-shadow: 0 8px 24px rgba(242,169,59,.22);
+}
+.btn-primary:hover{ box-shadow: 0 12px 30px rgba(242,169,59,.3); }
+.btn-ghost{
+  color:var(--text);
+  border-color:var(--line-2);
+  background:var(--raise);
+}
+.btn-ghost:hover{ border-color:var(--signal); }
 
 /* link inline no texto */
 .ilink{
