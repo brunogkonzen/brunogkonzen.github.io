@@ -16,25 +16,29 @@
 }
 
 :root {
+  /* cores base: os valores ficam aqui; o resto aponta para elas (DESIGN.md) */
   --fundo: #FFFFFF;          /* branco */
-  --painel: #1F5BD6;         /* chapa do quadro: azul */
-  --painel-borda: #1749B3;
-  --plastico: #FFFFFF;       /* corpo do disjuntor */
+  --nevoa: #F3F7FE;          /* branco azulado: fundo de cartões e fotos */
+  --azul: #1F5BD6;           /* azul do quadro, botões e links */
+  --azul-escuro: #1749B3;
+  --azul-claro: #8DB3FF;     /* detalhes sobre fundo azul */
   --plaqueta: #0B2A6F;       /* plaquetas e títulos: azul-marinho */
   --texto: #22314F;
   --apoio: #5B6782;
   --linha: #DCE3EF;
   --borda: #C9D3E6;
-  --azul: #1F5BD6;           /* botões e links */
-  --azul-escuro: #1749B3;
-  --azul-claro: #8DB3FF;     /* detalhes sobre fundo azul */
   --energia: #22A55A;        /* LED com energia */
   --sem-energia: #A7B2C6;    /* LED apagado */
   --espera: #E3A008;         /* ligado, mas sem energia chegando */
-  --fio-azul: #1F5BD6;
-  --cabo-infra: #0B2A6F;     /* três tons de azul para os três circuitos */
-  --cabo-dados: #1F5BD6;
-  --cabo-auto: #8DB3FF;
+
+  /* papéis: apelidos das cores base */
+  --painel: var(--azul);     /* chapa do quadro */
+  --painel-borda: var(--azul-escuro);
+  --plastico: var(--fundo);  /* corpo do disjuntor */
+  --fio-azul: var(--azul);
+  --cabo-infra: var(--plaqueta); /* três tons de azul para os três circuitos */
+  --cabo-dados: var(--azul);
+  --cabo-auto: var(--azul-claro);
 
   --fonte: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
@@ -160,7 +164,7 @@ section[id] {
   color: var(--texto);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9875rem;
+  font-size: 0.9375rem;
   padding: 0.5rem 0;
 }
 .menu a:hover {
@@ -177,7 +181,7 @@ section[id] {
   color: var(--plaqueta);
   background: transparent;
   border: 1px solid var(--borda);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 0.5rem 0.9rem;
   min-height: 44px;
   cursor: pointer;
@@ -275,7 +279,7 @@ section[id] {
 }
 .botao-linha:hover {
   border-color: var(--azul);
-  background: #F3F7FE;
+  background: var(--nevoa);
 }
 
 /* ---------------------------------------------------------- quadro */
@@ -499,7 +503,7 @@ section[id] {
 .secao-intro {
   max-width: 40rem;
   margin: 1rem 0 0;
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
   color: var(--apoio);
 }
 
@@ -696,7 +700,7 @@ section[id] {
   border-radius: 10px;
   color: var(--plaqueta);
   text-decoration: none;
-  background: #F6F9FF;
+  background: var(--nevoa);
   transition: border-color 160ms ease, background-color 160ms ease;
 }
 .canais a:hover {
@@ -783,7 +787,7 @@ section[id] {
   height: auto;
   border-radius: 10px;
   border: 1px solid var(--borda);
-  background: #F3F7FE;
+  background: var(--nevoa);
 }
 .formacao-foto figcaption {
   display: flex;
