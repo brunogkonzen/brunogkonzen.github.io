@@ -622,159 +622,7 @@ section[id] {
   font-size: 0.9375rem;
 }
 
-/* projetos */
-.destaque {
-  margin-top: 2.5rem;
-  background: var(--plaqueta);
-  color: #E3EAF8;
-  border-radius: 14px;
-  padding: 1.75rem;
-}
-@media (min-width: 760px) {
-  .destaque {
-    padding: 2.5rem;
-  }
-}
-.destaque h3 {
-  color: #fff;
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 800;
-  font-stretch: 70%;
-}
-.destaque p {
-  max-width: 44rem;
-  margin: 1rem 0 0;
-}
-.destaque .itens {
-  color: rgba(227, 234, 248, 0.72);
-}
-.destaque-cabeca,
-.projeto-cabeca {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem 1rem;
-}
-.situacao {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--apoio);
-}
-.destaque .situacao {
-  color: #E3EAF8;
-}
-.situacao-ar .led {
-  background: var(--energia);
-  box-shadow: 0 0 0 3px rgba(47, 168, 85, 0.25);
-}
-.situacao-beta .led {
-  background: var(--espera);
-}
-
-/* bornes ligados por fio: o caminho do XML até a guia */
-.bornes {
-  list-style: none;
-  margin: 2rem 0 1.5rem;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0;
-  counter-reset: none;
-}
-.bornes li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-stretch: 85%;
-  color: #fff;
-}
-.bornes li::before {
-  content: "";
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  border: 2px solid var(--azul-claro);
-  margin-right: 0.55rem;
-  flex-shrink: 0;
-}
-.bornes li:not(:last-child)::after {
-  content: "";
-  display: block;
-  width: clamp(1.5rem, 5vw, 4rem);
-  height: 2px;
-  margin: 0 0.75rem;
-  background: var(--azul-claro);
-}
-.bornes li:last-child {
-  background: var(--azul-claro);
-  color: var(--plaqueta);
-  padding: 0.3rem 0.7rem;
-  border-radius: 4px;
-}
-.bornes li:last-child::before {
-  border-color: var(--plaqueta);
-}
-@media (max-width: 560px) {
-  .bornes {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-  }
-  .bornes li:not(:last-child)::after {
-    position: absolute;
-    left: 0.3rem;
-    top: 100%;
-    width: 2px;
-    height: 1rem;
-    margin: 0;
-  }
-  .bornes li {
-    margin-bottom: 1rem;
-  }
-}
-.link-claro {
-  display: inline-block;
-  margin-top: 1.25rem;
-  color: #fff;
-  font-weight: 600;
-  text-decoration-color: var(--azul-claro);
-  text-decoration-thickness: 2px;
-}
-
-.projetos-menores {
-  display: grid;
-  gap: 1.25rem;
-  margin-top: 1.25rem;
-}
-@media (min-width: 760px) {
-  .projetos-menores {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.projeto {
-  border: 1px solid var(--borda);
-  border-radius: 14px;
-  padding: 1.5rem 1.75rem;
-  background: #F6F9FF;
-}
-.projeto h3 {
-  font-size: 1.625rem;
-  font-weight: 750;
-}
-.projeto p {
-  margin: 0.75rem 0 0;
-}
-.projeto a {
-  display: inline-block;
-  margin-top: 1rem;
-  font-weight: 600;
-}
+/* ferramentas do dia a dia, no fim de "O que eu faço" */
 .ferramentas {
   margin: 2.5rem 0 0;
   max-width: 44rem;
@@ -789,7 +637,7 @@ section[id] {
   list-style: none;
   margin: 2.5rem 0 0;
   padding: 0;
-  max-width: 48rem;
+  max-width: 62rem;
 }
 .linha-tempo li {
   display: grid;
@@ -922,5 +770,45 @@ section[id] {
 @media (max-width: 959px) {
   .circuito:last-child {
     border-bottom: 0;
+  }
+}
+
+/* fotos de formatura dentro da linha do tempo */
+.formacao-foto {
+  margin: 1.25rem 0 0;
+  max-width: 15rem;
+}
+.formacao-foto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--borda);
+  background: #F3F7FE;
+}
+.formacao-foto figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}
+.credito {
+  font-size: 0.75rem;
+  color: var(--apoio);
+}
+@media (min-width: 640px) {
+  .formacao-foto {
+    grid-column: 2;
+  }
+}
+@media (min-width: 960px) {
+  .linha-tempo li {
+    grid-template-columns: 10rem 1fr 13.5rem;
+    align-items: start;
+  }
+  .formacao-foto {
+    grid-column: 3;
+    margin: 0;
+    max-width: none;
   }
 }
